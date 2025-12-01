@@ -243,9 +243,51 @@ if (letter>="a" && letter<="z") {
 }
 
 // 30. single digit check
-let num=5
-if (num>=0 && num<=9) {
-    console.log("single digit")
+// let num=5
+// if (num>=0 && num<=9) {
+//     console.log("single digit")
+// } else {
+//     console.log("not a single digit")
+// }
+
+// 31. divisible by 10
+// let num=100
+// if (num%10==0) {
+//     console.log("divisible by 10")
+// } else {
+//     console.log("not divisible by 10")
+// }
+
+// 32. check days of the month
+let month=feb
+if (month==feb) {
+    console.log("28 days")
+} else if (month==jan || month==mar || month==may || month==jul || month==aug || month==oct || month==dec) {
+    console.log("31 days")
 } else {
-    console.log("not a single digit")
+    console.log("30 days")
+}
+
+// 33. password length check
+let password="1234"
+if (password.length>=8) {
+    console.log("valid password")
+} else {
+    console.log("password too short")
+}
+
+// 34. check zero
+let num=0
+if (num==0) {
+    console.log("zero")
+} else {
+    console.log("not zero")
+}
+
+// 35. grade A check
+let marks=95
+if (marks>=90) {
+    console.log("grade A")
+} else {
+    console.log("less than grade A")
 }
