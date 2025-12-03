@@ -136,6 +136,19 @@ function printprime(a,b){
             console.log(i)
         }
     }
+
+    // for (let i=a;i<=b;i++){
+    //     let prime=true
+    //     for(let j=2;j<i;j++){
+    //         if(i%j==0){
+    //             prime=false;
+    //             break;
+    //         }
+    //     }
+    //     if(prime){
+    //         console.log(i)
+    //     }
+    // }
 }
 printprime(1,20)
 
@@ -156,3 +169,58 @@ function countprime(a,b){
     console.log(`The total prime number from ${a} to ${b} is ${pcount}`)
 }
 countprime(1,20)
+
+// add the prime numbers from 1 to 20
+function addprime(a,b){
+    let sum=0
+    for(i=a;i<=b;i++){
+        let count=0
+        for(j=1;j<=i;j++){
+            if(i%j==0){
+                count++
+            }
+        }
+        if(count==2){
+            sum+=i
+        }
+    }
+    console.log(`The sum of prime numbers from ${a} to ${b} is ${sum}`)   
+}
+addprime(1,20)
+
+
+// 6. callback function
+const first =(a,b)=>{
+    console.log("first")
+    console.log(a+b)
+}
+
+const second =(x)=>{
+    console.log("second")
+    x(100,200);
+}
+
+second(first);
+
+// wrf that will take a function, and a value and passed function will tell the given number is even or not
+const fun=(a,b)=>{
+    a(b)
+}
+
+// const even=(c)=>{
+//     if(c%2==0){
+//         console.log("even")
+//     } else{
+//         console.log("not even")
+//     }
+
+// }
+
+fun((c)=>{
+    if(c%2==0){
+        console.log("even")
+    } else{
+        console.log("not even")
+    }
+
+},9)
