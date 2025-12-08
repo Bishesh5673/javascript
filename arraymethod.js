@@ -71,11 +71,11 @@
 // console.log(newArr)
 
 // filter out true values from given array of boolean
-let bool=[true,false,true,1,1,0,0,"hahaha"]
-const newTru= bool.filter((item)=>{
-    return item==true
-})
-console.log(newTru)
+// let bool=[true,false,true,1,1,0,0,"hahaha"]
+// const newTru= bool.filter((item)=>{
+//     return item==true
+// })
+// console.log(newTru)
 
 // filter out strings that contain the letter a
 // let str=["arr","eren","mun","mikasa","armin","hi","hello","hehehehe","hahaha"]
@@ -92,11 +92,11 @@ console.log(newTru)
 // console.log(newArr)
 
 // filter out empty string
-let str=["","arr","eren","mun","mikasa","armin","hi","hello","hehehehe","",""]
-const newStr= str.filter((item)=>{
-    return item.length == 0
-})
-console.log(newStr)
+// let str=["","arr","eren","mun","mikasa","armin","hi","hello","hehehehe","",""]
+// const newStr= str.filter((item)=>{
+//     return item.length == 0
+// })
+// console.log(newStr)
 
 // sum of[1,2,3,4,5] using reduce
 // let arr=[1,2,3,4,5]
@@ -132,13 +132,26 @@ console.log(newStr)
 // console.log(newArr)
 
 // filter out odd numbers than find the sum of remaining numbers
-let arr=[1,2,3,4,5]
-const newArr= arr.filter((item)=>{
-    return item%2!=0
-})
-console.log(newArr)
+// let arr=[1,2,3,4,5]
+// const newArr= arr.filter((item)=>{
+//     return item%2!=0
+// })
+// console.log(newArr)
 
-const sum= newArr.reduce((acc,item)=>{
-    return acc+item
-},0)
-console.log(sum)
+// const sum= newArr.reduce((acc,item)=>{
+//     return acc+item
+// },0)
+// console.log(sum)
+
+// map
+let arr=[1,2,3,4,5,6,7,8,9,10,"ereh"]
+// let newArr=arr.map((item)=>{
+//     return item**2
+// })
+// console.log(newArr)
+
+// find
+let val=arr.find((item)=>{
+    return item=='ereh'
+})
+console.log(val)
