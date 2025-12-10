@@ -35,19 +35,19 @@
 // API - Application Programming Interface
 // frontend(html,css,js,react)---API---backend(node.js)---database(mongodb)
 
-fetch('https://dummyjson.com/products',{
-    method:"GET",
-})
-    .then((data)=>{
-        return data.json()
-    }).then((d)=>{
-        console.log(d.products[0].title)
-        console.log(d.products[1].title)
-        console.log(d.products[23].title)
-    })
-    .catch((err)=>{
-        console.log(err)
-    })
+// fetch('https://dummyjson.com/products',{
+//     method:"GET",
+// })
+//     .then((data)=>{
+//         return data.json()
+//     }).then((d)=>{
+//         console.log(d.products[0].title)
+//         console.log(d.products[1].title)
+//         console.log(d.products[23].title)
+//     })
+//     .catch((err)=>{
+//         console.log(err)
+//     })
 
 // methods
 // httpMethod(protocol) = https
@@ -59,3 +59,25 @@ fetch('https://dummyjson.com/products',{
 // DELETE ==> to delete
 // PUT ==> to update all fields
 // PATCH ==> to update single field
+
+// async - await
+
+// const getProducts = async()=>{
+//     let res = await fetch('https://dummyjson.com/products')
+//     res = await res.json()
+//     console.log(res)
+// }
+// getProducts()
+
+async function getProducts() {
+    let res = await fetch('https://dummyjson.com/products')
+    res = await res.json()
+    console.log(res)
+}
+getProducts()
+
+// dom and event
+// class and object
+// error handling
+// switch
+
